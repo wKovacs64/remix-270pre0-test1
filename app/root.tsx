@@ -5,6 +5,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import appStylesUrl from './app.css?url';
+
+export function links() {
+  return [
+    { rel: "stylesheet", href: appStylesUrl },
+  ]
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
